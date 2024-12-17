@@ -1,3 +1,8 @@
+# Correr con dapr, recordar que si la aplicacion no tiene necesidad de escuchar es decir usar DaprServer puede usar el mismo puerto que la aplicacion, si se necesitara usar el DaprServer el puerto de DaprServer y de la aplicacion deben ser diferentes como en este caso que el puerto de **DaprServer** es ``3002`` y el de la **aplicacion** ``3004``
+```bash
+dapr run --app-id animals-food --app-port 3002 --app-protocol http --components-path ./components/ npm run start
+```
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>

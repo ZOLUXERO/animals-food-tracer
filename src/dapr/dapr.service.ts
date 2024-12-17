@@ -35,7 +35,7 @@ export class DaprService {
     await this.dogFoodService.subs(this.daprServer);
     await this.catFoodController.daprCatListen(this.daprServer);
     await this.daprServer.start().then(() => {
-      this.logger.log('Conectado a dapr...')
+      this.logger.log('[Escuchando] Conectado a dapr...');
     });
   }
 }

@@ -3,7 +3,7 @@ import { CatFoodController } from "./controller/cat-food.controller";
 
 @Module({
   imports: [],
-  controllers: [],
+  controllers: [CatFoodController],
   exports: [CatFoodController],
   providers: [CatFoodController],
 })
