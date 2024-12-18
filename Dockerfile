@@ -4,6 +4,6 @@ WORKDIR /usr/src/app
 
 COPY . .
 
-EXPOSE 3001
+EXPOSE 3004
 
 CMD ["npm", "start"]
